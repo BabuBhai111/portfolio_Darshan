@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+            <h1 class="user-name">John Doe</h1>
+        </div>
+
+        <!-- Summary and Personal Information -->
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Software Engineer with 5+ years of experience in full-stack development. Passionate about coding, problem-solving, and technology.</p>
+        </div>
+
+        <div class="personal-info">
+            <h2>Personal Information</h2>
+            <p><strong>Location:</strong> New York, USA</p>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+            <p><strong>Phone:</strong> +1 234 567 8901</p>
+        </div>
+
+        <!-- Interests and Accomplishments -->
+        <div class="interests">
+            <h2>Interests</h2>
+            <ul id="interests-list">
+                <li>Coding</li>
+                <li>Traveling</li>
+                <li>Photography</li>
+                <li>Reading</li>
+            </ul>
+            <button onclick="addInterest()">Add Interest</button>
+        </div>
+
+        <div class="accomplishments">
+            <h2>Accomplishments</h2>
+            <ul id="accomplishments-list">
+                <li>Developed a successful e-commerce platform with over 1 million users.</li>
+                <li>Speaker at TechCon 2023.</li>
+                <li>Published 10+ technical articles on medium.com.</li>
+            </ul>
+            <button onclick="toggleAccomplishments()">Toggle Accomplishments</button>
+        </div>
+
+        <!-- Social Connections -->
+        <div class="social-connections">
+            <h2>Social Connections</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/johndoe" target="_blank" onclick="linkAlert('LinkedIn')">LinkedIn</a></li>
+                <li><a href="https://github.com/johndoe" target="_blank" onclick="linkAlert('GitHub')">GitHub</a></li>
+                <li><a href="https://twitter.com/johndoe" target="_blank" onclick="linkAlert('Twitter')">Twitter</a></li>
+                <li><a href="https://www.instagram.com/johndoe" target="_blank" onclick="linkAlert('Instagram')">Instagram</a></li>
+                <li><a href="https://www.facebook.com/johndoe" target="_blank" onclick="linkAlert('Facebook')">Facebook</a></li>
+            </ul>
+        </div>
+
+        <!-- Navigation Links to Other Pages -->
+        <div class="navigation">
+            <h2>Other Pages</h2>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
